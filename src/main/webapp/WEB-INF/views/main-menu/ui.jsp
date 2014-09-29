@@ -12,8 +12,6 @@
 <script type="text/javascript"
 	src="<c:url value="/resources/js/home.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css" />">
-<script type="text/javascript"
-	src="<c:url value="/resources/js/ui.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/ui.css" />">
 </head>
 <body>
@@ -21,7 +19,7 @@
 	<div id="main">
 		<div class="sub-menu">
 			<ul>
-				<li class="submenuitem theming"><a href="#">Theming
+				<li class="submenuitem theming"><a href="#1">Theming
 						jQuery UI</a></li>
 			</ul>
 		</div>

@@ -12,8 +12,6 @@
 <script type="text/javascript"
 	src="<c:url value="/resources/js/home.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css" />">
-<script type="text/javascript"
-	src="<c:url value="/resources/js/effects.js" />"></script>
 <link rel="stylesheet"
 	href="<c:url value="/resources/css/effects.css" />">
 </head>
@@ -22,10 +20,10 @@
 	<div id="main">
 		<div class="sub-menu">
 			<ul>
-				<li class="submenuitem effects-list"><a href="#">List of
+				<li class="submenuitem effects-list"><a href="#1">List of
 						effects</a></li>
-				<li class="submenuitem custom"><a href="#">Custom Events</a></li>
-				<li class="submenuitem queue-dequeue"><a href="#">Queue and
+				<li class="submenuitem custom"><a href="#2">Custom Events</a></li>
+				<li class="submenuitem queue-dequeue"><a href="#3">Queue and
 						Dequeue Explained</a></li>
 			</ul>
 		</div>

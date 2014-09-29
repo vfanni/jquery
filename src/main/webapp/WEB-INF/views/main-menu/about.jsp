@@ -19,9 +19,9 @@
 	<div id="main">
 		<div class="sub-menu">
 			<ul>
-				<li class="submenuitem what"><a href="#">What is jQuery?</a></li>
-				<li class="submenuitem history"><a href="#">History</a></li>
-				<li class="submenuitem license"><a href="#">License</a></li>
+				<li class="submenuitem what"><a href="#1">What is jQuery?</a></li>
+				<li class="submenuitem history"><a href="#2">History</a></li>
+				<li class="submenuitem license"><a href="#3">License</a></li>
 			</ul>
 		</div>
 		<div class="content">

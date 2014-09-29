@@ -12,8 +12,6 @@
 <script type="text/javascript"
 	src="<c:url value="/resources/js/home.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css" />">
-<script type="text/javascript"
-	src="<c:url value="/resources/js/core.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/core.css" />">
 </head>
 <body>
@@ -21,17 +19,16 @@
 	<div id="main">
 		<div class="sub-menu">
 			<ul>
-				<li class="submenuitem onload-ready"><a href="#">Onload vs
+				<li class="submenuitem onload-ready"><a href="#1">Onload vs
 						Ready</a></li>
-				<li class="submenuitem object-utility"><a href="#">$ vs $()</a></li>
-				<li class="submenuitem conflict"><a href="#">Conflict
+				<li class="submenuitem object-utility"><a href="#2">$ vs $()</a></li>
+				<li class="submenuitem conflict"><a href="#3">Conflict
 						handling</a></li>
-				<li class="submenuitem attributes"><a href="#">Attributes</a></li>
-				<li class="submenuitem element"><a href="#">Element select</a></li>
-				<li class="submenuitem manipulating"><a href="#">Manipulating
+				<li class="submenuitem attributes"><a href="#4">Attributes</a></li>
+				<li class="submenuitem element"><a href="#5">Element select</a></li>
+				<li class="submenuitem manipulating"><a href="#6">Manipulating
 						elements</a></li>
-				<!-- 		<li id="object" class="submenuitem"><a href="#object">jQuery Object</a></li> -->
-				<li class="submenuitem iterating"><a href="#">Iterating</a>
+				<li class="submenuitem iterating"><a href="#7">Iterating</a>
 			</ul>
 		</div>
 

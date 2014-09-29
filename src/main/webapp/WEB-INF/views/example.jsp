@@ -9,7 +9,7 @@
 	
 </head>
 <body>
-	<h1>This text will appear before $(document).ready ran, but the background image not loaded! </h1></h1>
+	<h1>This text will appear before $(document).ready ran, but the background image not loaded! </h1>
 	<img src="<c:url value="/resources/fight.jpg"/>" style="width: 100%">
 	<script>
 		window.onload = function() {

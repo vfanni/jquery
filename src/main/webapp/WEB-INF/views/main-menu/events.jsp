@@ -12,8 +12,6 @@
 <script type="text/javascript"
 	src="<c:url value="/resources/js/home.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css" />">
-<script type="text/javascript"
-	src="<c:url value="/resources/js/events.js" />"></script>
 <link rel="stylesheet"
 	href="<c:url value="/resources/css/events.css" />">
 </head>
@@ -22,13 +20,13 @@
 	<div id="main">
 		<div class="sub-menu">
 			<ul>
-				<li class="submenuitem event-basic"><a href="#">jQuery
+				<li class="submenuitem event-basic"><a href="#1">jQuery
 						Event Basics</a></li>
-				<li class="submenuitem events-list"><a href="#">List of
+				<li class="submenuitem events-list"><a href="#2">List of
 						events</a></li>
-				<li class="submenuitem handling"><a href="#">Handling
+				<li class="submenuitem handling"><a href="#3">Handling
 						Events</a></li>
-				<li class="submenuitem delegation"><a href="#">Event
+				<li class="submenuitem delegation"><a href="#4">Event
 						Delegation</a></li>
 			</ul>
 		</div>

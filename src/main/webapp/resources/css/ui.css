@@ -1,11 +1,9 @@
 .sub-menu, #footer {
 	background-color: rgb(104,0,214);
 }
-
 .sub-content a:hover, .sub-content a:active {
 	color: rgb(104,0,214);
 }
-
 .javascript {
 	background-color: rgb(104,0,214);
 }

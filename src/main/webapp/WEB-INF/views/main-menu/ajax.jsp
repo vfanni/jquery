@@ -13,19 +13,17 @@
 	src="<c:url value="/resources/js/home.js" />"></script>
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css" />">
 <link rel="stylesheet" href="<c:url value="/resources/css/ajax.css" />">
-<script type="text/javascript"
-	src="<c:url value="/resources/js/ajax.js" />"></script>
 </head>
 <body>
 	<div id="header"><%@include file="/WEB-INF/views/header.jsp"%></div>
 	<div id="main">
 		<div class="sub-menu">
 			<ul>
-				<li class="submenuitem methods"><a href="#">Ajax-Related
+				<li class="submenuitem methods"><a href="#1">Ajax-Related
 						Methods</a></li>
-				<li class="submenuitem ajax-from"><a href="#">Ajax
+				<li class="submenuitem ajax-from"><a href="#2">Ajax
 						and Forms</a></li>
-				<li class="submenuitem ajax-event"><a href="#">Ajax
+				<li class="submenuitem ajax-event"><a href="#3">Ajax
 						Events</a></li>
 			</ul>
 		</div>
