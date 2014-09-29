@@ -1,0 +1,50 @@
+<meta name="description" content="noConflict()" />
+
+<script src="http://code.jquery.com/jquery-1.6.4rc1.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<html>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <img src="http://rhrealitycheck.wpengine.netdna-cdn.com/wp-content/uploads/2014/03/rainbow-book-375x250.jpg" alt="Book" id="book">
+<script id="jsbin-javascript">
+var j = jQuery.noConflict(true);
+
+$( "#book" ).live("click",function() {
+  alert("live");
+});
+
+j("#book").on("click",function($){
+  alert("on");
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><meta name="description" content="noConflict()" />
+
+<script src="//code.jquery.com/jquery-1.6.4rc1.js"><\/script>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"><\/script>
+
+<html>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <img src="http://rhrealitycheck.wpengine.netdna-cdn.com/wp-content/uploads/2014/03/rainbow-book-375x250.jpg" alt="Book" id="book">
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">var j = jQuery.noConflict(true);
+
+$( "#book" ).live("click",function() {
+  alert("live");
+});
+
+j("#book").on("click",function($){
+  alert("on");
+});</script></body>
+</html>

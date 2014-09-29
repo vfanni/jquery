@@ -1,0 +1,27 @@
+
+.sub-menu, #footer {
+	background-color: rgb(244,114,208);
+}
+.javascript {
+	background-color: rgb(244,114,208);
+}
+ .sub-content a:hover, .sub-content a:active, p.hoverList:hover {
+ 	color: rgb(244,114,208);
+ }
+ p.hoverList:hover {
+	cursor: help;
+	position: relative;
+}
+p.hoverList span {
+	display: none;
+	color: white;
+}
+p.hoverList:hover span {
+	display: block;
+	z-index: 100;
+	background-color: rgb(244,114,208);
+	position: absolute;
+	text-decoration: none;
+	padding: 2px;
+	
+}

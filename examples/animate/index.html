@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="animate()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="animate">This is a div</div>
+  <div>This is another div</div>
+<script id="jsbin-javascript">
+$("div.animate").animate({
+			left: ["+=50", "linear"],
+			opacity: 0.25
+		},
+		500, //duration
+		function(){  //after animation
+			console.log("done");
+		}
+	);
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="animate()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="animate">This is a div</div>
+  <div>This is another div</div>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">
+$("div.animate").animate({
+			left: ["+=50", "linear"],
+			opacity: 0.25
+		},
+		500, //duration
+		function(){  //after animation
+			console.log("done");
+		}
+	);</script></body>
+</html>

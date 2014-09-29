@@ -1,0 +1,21 @@
+
+.sub-menu, #footer {
+	background-color: rgb(96,169,23);
+}
+
+#onload-ready .javascript {
+	width: 440px;
+}
+table {
+	margin-top: 30px;
+}
+th {
+	color: black;
+}
+.sub-content a:hover, .sub-content a:active {
+	color: rgb(96,169,23) !important;
+}
+
+.javascript {
+	background-color: rgb(96,169,23);
+}

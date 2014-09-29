@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="map()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="one"></div>
+  <div id="two"></div>
+  <div id="three"></div>
+<script id="jsbin-javascript">
+var array = ["A","B","C","D"];
+
+$("#one").text( array.join(", "));
+
+array = $.map(array, function(val, i){
+  return (val.toLowerCase() + i);
+});
+
+$("#two").text( array.join(", "));
+
+array = $.map(array, function( a ,i) {
+  return a + "-" +array[(array.length -i)-1];
+});
+
+$("#three").text( array.join(", "));
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="map()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="one"></div>
+  <div id="two"></div>
+  <div id="three"></div>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">var array = ["A","B","C","D"];
+
+$("#one").text( array.join(", "));
+
+array = $.map(array, function(val, i){
+  return (val.toLowerCase() + i);
+});
+
+$("#two").text( array.join(", "));
+
+array = $.map(array, function( a ,i) {
+  return a + "-" +array[(array.length -i)-1];
+});
+
+$("#three").text( array.join(", "));</script></body>
+</html>

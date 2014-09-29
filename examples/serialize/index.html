@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="serialize()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <form>
+    Name<input type="text" name="name"><br>
+    Male<input type="radio" name="gender">
+    Female<input type="radio" name="gender"><br>
+    New<input type="checkbox" name="new">
+    <button type="submit">Submit</button>
+  </form>
+<script id="jsbin-javascript">
+$( "form" ).on( "submit", function( event ) {
+  event.preventDefault();
+  console.log( $( this ).serialize() );
+});
+
+$( "form" ).on( "submit", function( event ) {
+  event.preventDefault();
+  console.log( $( this ).serializeArray() );
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="serialize()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <form>
+    Name<input type="text" name="name"><br>
+    Male<input type="radio" name="gender">
+    Female<input type="radio" name="gender"><br>
+    New<input type="checkbox" name="new">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">$( "form" ).on( "submit", function( event ) {
+  event.preventDefault();
+  console.log( $( this ).serialize() );
+});
+
+$( "form" ).on( "submit", function( event ) {
+  event.preventDefault();
+  console.log( $( this ).serializeArray() );
+});</script></body>
+</html>

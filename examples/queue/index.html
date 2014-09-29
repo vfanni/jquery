@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="queue()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="title">Title</div>
+  <div>This is a div</div>
+  
+<script id="jsbin-javascript">
+$.fn.pause = function( n ) {
+	    return this.queue(function() {
+	        var el = this;
+	        setTimeout(function() {
+	            return $( el ).dequeue();
+	        }, n );
+	    });
+	};
+	 
+	$( "div" ).animate({
+	    height: 50
+	}, "slow" ).pause( 1000 ).animate({
+	    height: 150
+	});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="queue()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="title">Title</div>
+  <div>This is a div</div>
+  
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">$.fn.pause = function( n ) {
+	    return this.queue(function() {
+	        var el = this;
+	        setTimeout(function() {
+	            return $( el ).dequeue();
+	        }, n );
+	    });
+	};
+	 
+	$( "div" ).animate({
+	    height: 50
+	}, "slow" ).pause( 1000 ).animate({
+	    height: 150
+	});</script></body>
+</html>

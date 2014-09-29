@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="val()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="results"> </div><br>
+  
+  <select id="single">
+  <option>orange</option>
+  <option>green</option>
+</select>
+ 
+<select id="multiple" multiple="multiple">
+  <option selected="selected">click</option>
+  <option>mouseenter</option>
+  <option selected="selected">mousedown</option>
+</select>
+    
+<script id="jsbin-javascript">
+function displayVals() {
+  var singleValues = $( "#single" ).val();
+  var multipleValues = $( "#multiple" ).val() || [];
+  $( "#results" ).html( "<b>Single:</b> " + singleValues +
+    " <b>Multiple:</b> " + multipleValues.join( ", " ) );
+}
+ 
+$( "select" ).change( displayVals );
+displayVals();
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="val()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="results"> </div><br>
+  
+  <select id="single">
+  <option>orange</option>
+  <option>green</option>
+</select>
+ 
+<select id="multiple" multiple="multiple">
+  <option selected="selected">click</option>
+  <option>mouseenter</option>
+  <option selected="selected">mousedown</option>
+</select>
+    
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">
+function displayVals() {
+  var singleValues = $( "#single" ).val();
+  var multipleValues = $( "#multiple" ).val() || [];
+  $( "#results" ).html( "<b>Single:</b> " + singleValues +
+    " <b>Multiple:</b> " + multipleValues.join( ", " ) );
+}
+ 
+$( "select" ).change( displayVals );
+displayVals();</script></body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="validate" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <form>
+    Name*<input type="text" name="name" class="required"><br>
+    Phone number<input type="text" name="phone" id="phone"><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="error"></div>
+<script id="jsbin-javascript">
+$("form").submit(function(event){	if($(".required").val().length === 0 ){
+          $("#error").text("Fill the * inputs.");
+          $(".required").css("background-color","red");
+			return false;
+		} else {
+			var inputtedPhoneNumber = $("#phone" ).val();
+          var phoneNumberRegex = /^\d*$/;
+          if ( !phoneNumberRegex.test( inputtedPhoneNumber ) ) {
+            $("#phone").css("color","red");
+            return false;
+          } else {
+            console.log("phone number is okay");
+          }
+		}
+	});
+
+</script>
+
+
+</body>
+</html>

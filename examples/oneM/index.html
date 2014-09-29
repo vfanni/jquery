@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="oneM()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <input type="text" id="one">
+  <input type="text" id="two">
+  <input type="text">
+  <div id="results"></div>
+<script id="jsbin-javascript">
+$("input[id]").one("focus mouseover keydown", function(event){
+  $("#results").append("A " + event.type + " event occurred for the first time on the input with id " + this.id  + "<br>");
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="oneM()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <input type="text" id="one">
+  <input type="text" id="two">
+  <input type="text">
+  <div id="results"></div>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">
+$("input[id]").one("focus mouseover keydown", function(event){
+  $("#results").append("A " + event.type + " event occurred for the first time on the input with id " + this.id  + "<br>");
+});</script></body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="one()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <button type="button">click</button>
+  <div id="results"></div>
+<script id="jsbin-javascript">
+$("button").one("click",function(){
+  $("#results").append("First click.<br>");
+  $(this).click(function(){
+    $("#results").append("It was clicked before.<br>");
+  });
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="one()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <button type="button">click</button>
+  <div id="results"></div>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">$("button").one("click",function(){
+  $("#results").append("First click.<br>");
+  $(this).click(function(){
+    $("#results").append("It was clicked before.<br>");
+  });
+});
+</script></body>
+</html>

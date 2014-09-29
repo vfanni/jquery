@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="attr()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="results"></div><br>
+  <img src="http://heera.it/wp-content/uploads/2011/11/jquery-logo-310x233.jpg" id="image">
+  
+<script id="jsbin-javascript">
+function getAttr(){
+$("#results").append("href: " + $("#image").attr("src") + "<br>title: " + $("#image").attr("title") + "<br>alt: " + $("#image").attr("alt") + "<br><br>");
+}
+
+getAttr();
+
+$("#image").attr("title","jquery");
+
+getAttr();
+
+$("#image").attr({
+  title:"jquery logo",
+  alt: "logo"
+});
+
+getAttr();
+
+$("#image").removeAttr("src");
+
+getAttr();
+
+$("#image").attr("src","http://www.ld-services.net/iso_album/logo-jquery.png");
+
+getAttr();
+</script>
+
+
+</body>
+</html>

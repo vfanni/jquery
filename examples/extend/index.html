@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="extend()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="first">First</div><br>
+  <div id="second">Second</div>
+  
+  <button type="button" id="submit">extend</button>
+<script id="jsbin-javascript">
+var first = {a: "1", b: "2"};
+var second = {a: "5", c: "3"};
+
+$("#first").append("<br>a: " + first.a + "<br> b: " + first.b + "<br> c: " + first.c);
+
+$("#second").append("<br>a: " + second.a + "<br> b: " + second.b + "<br> c " + second.c);
+
+$("#submit").click(function(){
+  $.extend(first,second);
+  $("#first").append("<br> --> <br>a: " + first.a + "<br> b: " + first.b + "<br> c: " + first.c);
+
+$("#second").append("<br> --><br> a: " + second.a + "<br> b: " + second.b + "<br> c " + second.c);
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="extend()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="first">First</div><br>
+  <div id="second">Second</div>
+  
+  <button type="button" id="submit">extend</button>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">var first = {a: "1", b: "2"};
+var second = {a: "5", c: "3"};
+
+$("#first").append("<br>a: " + first.a + "<br> b: " + first.b + "<br> c: " + first.c);
+
+$("#second").append("<br>a: " + second.a + "<br> b: " + second.b + "<br> c " + second.c);
+
+$("#submit").click(function(){
+  $.extend(first,second);
+  $("#first").append("<br> --> <br>a: " + first.a + "<br> b: " + first.b + "<br> c: " + first.c);
+
+$("#second").append("<br> --><br> a: " + second.a + "<br> b: " + second.b + "<br> c " + second.c);
+});
+
+
+</script></body>
+</html>

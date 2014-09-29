@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="each()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script     src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="first">First</div>
+  <div id="second">Second</div>
+  <div id="third">Third</div>
+  <div id="fourth">Fourth</div>
+  <div id="fifth">Fifth</div>
+<script id="jsbin-javascript">
+var array = ["first", "second", "third", "fourth", "fifth"];
+
+$.each(array, function(index, value){
+  $("#" + value).append("- " + index);
+});
+
+
+var obj = {first: 1, second: 2, third: 3, fourht: 4, fifth: 5};
+
+$.each(obj, function(index, value){
+  $("#" + index).append(" - " + value);
+});
+
+$("div").each(function(index, element){
+  $(element).append(" - " + index);
+});
+
+$.each($("div"),function(index, value){
+  $(value).append(" - " + index);
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="each()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+  <script     src="//code.jquery.com/jquery-1.11.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="first">First</div>
+  <div id="second">Second</div>
+  <div id="third">Third</div>
+  <div id="fourth">Fourth</div>
+  <div id="fifth">Fifth</div>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">var array = ["first", "second", "third", "fourth", "fifth"];
+
+$.each(array, function(index, value){
+  $("#" + value).append("- " + index);
+});
+
+
+var obj = {first: 1, second: 2, third: 3, fourht: 4, fifth: 5};
+
+$.each(obj, function(index, value){
+  $("#" + index).append(" - " + value);
+});
+
+$("div").each(function(index, element){
+  $(element).append(" - " + index);
+});
+
+$.each($("div"),function(index, value){
+  $(value).append(" - " + index);
+});
+</script></body>
+</html>

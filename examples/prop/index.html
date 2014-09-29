@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="prop()" />
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  1.<input type="checkbox"><br>
+  2.<input type="checkbox"><br>
+  3.<input type="checkbox"><br>
+  4.<input type="checkbox"><br>
+  5. <input type="text"><br>
+  
+  <div id="results"></div>
+<script id="jsbin-javascript">
+$("input[type='checkbox']").prop({
+  checked: true
+});
+
+
+
+$("input[type='text']").prop({
+  value: "some text"
+});
+
+$("input").prop({
+  disabled: true
+});
+
+$("input").prop({
+  myProperty: "my property value"
+});
+
+$("#results").append("myProperty: " + $("input").prop("myProperty"));
+
+$("input").removeProp("myProperty");
+
+$("#results").append("<br>myProperty: " +$("input").prop("myProperty"));
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="prop()" />
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  1.<input type="checkbox"><br>
+  2.<input type="checkbox"><br>
+  3.<input type="checkbox"><br>
+  4.<input type="checkbox"><br>
+  5. <input type="text"><br>
+  
+  <div id="results"></div>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">
+$("input[type='checkbox']").prop({
+  checked: true
+});
+
+
+
+$("input[type='text']").prop({
+  value: "some text"
+});
+
+$("input").prop({
+  disabled: true
+});
+
+$("input").prop({
+  myProperty: "my property value"
+});
+
+$("#results").append("myProperty: " + $("input").prop("myProperty"));
+
+$("input").removeProp("myProperty");
+
+$("#results").append("<br>myProperty: " +$("input").prop("myProperty"));
+</script></body>
+</html>

@@ -1,0 +1,36 @@
+.sub-menu, #footer {
+	background-color: rgb(0,193,222);
+}
+#licenseObject {
+	width: 980px;
+	height: 980px;
+	margin: 5px;
+}
+.javascript{
+	background-color: rgb(0,193,222);
+}
+.sub-content h3 {
+	margin: 100px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.sub-content p {
+	margin: 100px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.sub-content table {
+	margin: 100px;
+	margin-top:20px;
+}
+.jqueryHistory {
+	color: black;
+	margin-top: 30px;
+	width: 800px;
+}
+.jqueryHistory td, .jqueryHistory th {
+	padding: 5px;
+}
+.jqueryHistory th {
+	font-weight: bold;
+}
